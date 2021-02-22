@@ -420,14 +420,14 @@ h1 {
 }
 
 .social .item {
-  width: 44px;
-  height: 44px;
   background-color: var(--main-header);
   color: var(--svg-main-color);
 }
 
 .svg-item {
   padding: 12px;
+  width: 44px;
+  height: 44px;
 }
 
 .item .svg-item {
