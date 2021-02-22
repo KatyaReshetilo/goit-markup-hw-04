@@ -423,13 +423,7 @@ h1 {
   width: 44px;
   height: 44px;
   background-color: var(--main-header);
-  border-radius: 50%;
   color: var(--svg-main-color);
-}
-
-.social .item:hover,
-.social .item:focus {
-  background-color: var(--accent-color);
 }
 
 .svg-item {
@@ -439,11 +433,13 @@ h1 {
 .item .svg-item {
   color: currentColor;
   display: inline-block;
+  border-radius: 50%;
 }
 
 .item .svg-item:hover,
 .item .svg-item:focus {
   color: var(--main-header);
+  background-color: var(--accent-color);
 }
 
 .svg-item .link {
@@ -472,25 +468,24 @@ h1 {
 }
 
 .clients-item {
+  color: var(--svg-main-color);
+}
+
+.clients-item .link {
   width: 170px;
   height: 90px;
   border: 1px solid var(--svg-main-color);
   border-radius: 4px;
-  color: var(--svg-main-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.clients-item .link {
   color: currentColor;
-  display: block;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-item .link:hover,
+.clients-item .link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -558,12 +553,6 @@ h1 {
   border: 1px solid var(--border-color);
 }
 
-.example:hover,
-.example:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .example-head {
   margin-top: 0;
   margin-bottom: 4px;
@@ -586,4 +575,17 @@ h1 {
 
 .example-name {
   padding: 20px 24px;
+}
+
+.example-link {
+  margin: 0;
+  padding: 0;
+  color: currentColor;
+  display: inline-block;
+}
+
+.example-link:hover,
+.example-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
